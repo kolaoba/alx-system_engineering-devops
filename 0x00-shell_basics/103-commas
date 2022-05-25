@@ -1,4 +1,3 @@
 
 #!/bin/bash
-ls -aplm | sed G
-
+ls -aplm | tr '\n' ' '
