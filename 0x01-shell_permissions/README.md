@@ -12,3 +12,4 @@ This folder contains scripts used to run various permission actions in bash
 10-mirror_permission script mirrors permissions of file named olleh to hello file
 11-directories_permissions script adds execute permission to all subdirectories of current directory for owner, group and all others leaving files unchanged
 12-directory_permissions creates a directory called my_dir and sets permissions to 751
+13-change_group changes group owner to school for hello file
