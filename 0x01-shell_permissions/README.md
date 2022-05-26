@@ -9,3 +9,4 @@ This folder contains scripts used to run various permission actions in bash
 7-everybody script adds execute permission to the owner, group owner and other users, to the file hello
 8-James_Bond script sets no permission to owner and group and all permissions to others in the hello file
 9-John_Doe script sets -rwxr-x-wx permission to hello file
+10-mirror_permission script mirrors permissions of file named olleh to hello file
