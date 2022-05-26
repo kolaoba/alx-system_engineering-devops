@@ -5,3 +5,4 @@ This folder contains scripts used to run various permission actions in bash
 3-new_owner changes owner of the file hello to user betty
 4-groups creates an empty file called hello
 5-execute adds execute permission to hello file
+6-multiple_permissions script adds execute permission to the owner and group owner, and read permission to other users, to the file hello
