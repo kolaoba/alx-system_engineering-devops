@@ -6,3 +6,4 @@ This folder contains scripts used to run various permission actions in bash
 4-groups creates an empty file called hello
 5-execute adds execute permission to hello file
 6-multiple_permissions script adds execute permission to the owner and group owner, and read permission to other users, to the file hello
+7-everybody script adds execute permission to the owner, group owner and other users, to the file hello
