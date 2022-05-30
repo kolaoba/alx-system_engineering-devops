@@ -13,3 +13,4 @@ This folder contains scripts for understanding redirections and special characte
 11-directories counts the number of directories and subs in the current directory minus the current directory
 12-newest_files displays the 10 newest files in the current directory
 13-unique takes a list of words as input and prints only words that appear exactly once
+14-findthatword displays lines containing the pattern root in the /etc/passwd file
