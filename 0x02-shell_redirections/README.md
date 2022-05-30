@@ -3,3 +3,4 @@ This folder contains scripts for understanding redirections and special characte
 1-confused_smiley prints a confused smiley to the display
 2-hellofile displays the content of etc/passwd
 3-twofiles prints content of /etc/passwd and /etc/hosts
+4-lastlines prints the last 10 lines of the /etc/passwd file
