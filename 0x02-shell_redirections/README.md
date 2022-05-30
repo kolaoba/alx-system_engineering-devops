@@ -21,3 +21,4 @@ This folder contains scripts for understanding redirections and special characte
 19-AZ replaces al charactes A and c with Z and e respectively
 21-reverse reverses its input
 22-users_and_homes lists all ussers and their home directories sorted by users
+100-empty_casks finds empty files and directories in current directory and all subdirectories
