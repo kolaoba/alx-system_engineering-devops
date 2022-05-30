@@ -20,3 +20,4 @@ This folder contains scripts for understanding redirections and special characte
 18-letteronly displays lines of ssh folde starting with a letter, caps included
 19-AZ replaces al charactes A and c with Z and e respectively
 21-reverse reverses its input
+22-users_and_homes lists all ussers and their home directories sorted by users
