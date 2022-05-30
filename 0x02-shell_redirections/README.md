@@ -9,3 +9,4 @@ This folder contains scripts for understanding redirections and special characte
 7-file creates an awkwardly named file containing the text Best School
 8-cwd_state outputs the results of ls-la command on working directory to ls_cwd_content file, overwriting if exists and creating if not
 9-duplicate_last_line duplicates the last line of iacta file
+10-no_more_js deletes all regular files with a .js extension in current directory and subfolders
