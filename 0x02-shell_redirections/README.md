@@ -7,3 +7,4 @@ This folder contains scripts for understanding redirections and special characte
 5-firstlines prints the first 10 lines of the /etc/passwd file
 6-third_line displays the third line of the file iacta
 7-file creates an awkwardly named file containing the text Best School
+8-cwd_state outputs the results of ls-la command on working directory to ls_cwd_content file, overwriting if exists and creating if not
