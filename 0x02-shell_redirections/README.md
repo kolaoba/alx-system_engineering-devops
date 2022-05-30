@@ -19,3 +19,4 @@ This folder contains scripts for understanding redirections and special characte
 17-hidethisword displays all the lines in etc/passwd that do not contain the patter bin
 18-letteronly displays lines of ssh folde starting with a letter, caps included
 19-AZ replaces al charactes A and c with Z and e respectively
+21-reverse reverses its input
