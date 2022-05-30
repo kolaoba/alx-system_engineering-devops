@@ -16,3 +16,4 @@ This folder contains scripts for understanding redirections and special characte
 14-findthatword displays lines containing the pattern root in the /etc/passwd file
 15-countthatword counts the number of lines containing bin in the etc/passwd file
 16-whatsnext displays lines containing root and 3 lines after them in etc/passwd file
+17-hidethisword displays all the lines in etc/passwd that do not contain the patter bin
