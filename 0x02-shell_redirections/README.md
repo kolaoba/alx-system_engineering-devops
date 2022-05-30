@@ -2,3 +2,4 @@ This folder contains scripts for understanding redirections and special characte
 0-hello_world prints hello, world to the standard output
 1-confused_smiley prints a confused smiley to the display
 2-hellofile displays the content of etc/passwd
+3-twofiles prints content of /etc/passwd and /etc/hosts
