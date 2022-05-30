@@ -6,3 +6,4 @@ This folder contains scripts for understanding redirections and special characte
 4-lastlines prints the last 10 lines of the /etc/passwd file
 5-firstlines prints the first 10 lines of the /etc/passwd file
 6-third_line displays the third line of the file iacta
+7-file creates an awkwardly named file containing the text Best School
