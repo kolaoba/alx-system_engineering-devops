@@ -5,3 +5,4 @@ This folder contains scripts for understanding redirections and special characte
 3-twofiles prints content of /etc/passwd and /etc/hosts
 4-lastlines prints the last 10 lines of the /etc/passwd file
 5-firstlines prints the first 10 lines of the /etc/passwd file
+6-third_line displays the third line of the file iacta
