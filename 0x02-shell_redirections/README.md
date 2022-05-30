@@ -14,3 +14,4 @@ This folder contains scripts for understanding redirections and special characte
 12-newest_files displays the 10 newest files in the current directory
 13-unique takes a list of words as input and prints only words that appear exactly once
 14-findthatword displays lines containing the pattern root in the /etc/passwd file
+15-countthatword counts the number of lines containing bin in the etc/passwd file
