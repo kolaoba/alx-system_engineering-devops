@@ -11,3 +11,5 @@ This folder contains scripts for understanding redirections and special characte
 9-duplicate_last_line duplicates the last line of iacta file
 10-no_more_js deletes all regular files with a .js extension in current directory and subfolders
 11-directories counts the number of directories and subs in the current directory minus the current directory
+12-newest_files displays the 10 newest files in the current directory
+13-unique takes a list of words as input and prints only words that appear exactly once
