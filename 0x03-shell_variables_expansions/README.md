@@ -10,3 +10,4 @@ This folder contains scripts generated attempting to understand shell init files
 9-divide_and_rule prints the result of POWER divided by DIVIDE, followed by a new line.
 10-love_exponent_breath displays the result of BREATH to the power LOVE.
 11-binary_to_decimal converts a number from base 2 to base 10, base 2 number is stored in $BINARY
+12-combinations prints all possible combinations of two letters, except oo, the letters are lowercase a to z
