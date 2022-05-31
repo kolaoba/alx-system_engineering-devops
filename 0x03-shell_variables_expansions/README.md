@@ -13,3 +13,4 @@ This folder contains scripts generated attempting to understand shell init files
 12-combinations prints all possible combinations of two letters, except oo, the letters are lowercase a to z
 13-print_float prints a number with two decimal places, followed by a new line. The number is store in $NUM.
 100-decimal_to_hexadecimal converts a number from base 10 to base 16. number is stored in $DECIMAL.
+101-rot13 encodes and decodes text using the rot13 encryption. Assume ASCII.
