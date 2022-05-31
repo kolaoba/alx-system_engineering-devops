@@ -12,3 +12,4 @@ This folder contains scripts generated attempting to understand shell init files
 11-binary_to_decimal converts a number from base 2 to base 10, base 2 number is stored in $BINARY
 12-combinations prints all possible combinations of two letters, except oo, the letters are lowercase a to z
 13-print_float prints a number with two decimal places, followed by a new line. The number is store in $NUM.
+100-decimal_to_hexadecimal converts a number from base 10 to base 16. number is stored in $DECIMAL.
