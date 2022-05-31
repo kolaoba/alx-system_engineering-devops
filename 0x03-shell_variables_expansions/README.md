@@ -7,3 +7,4 @@ This folder contains scripts generated attempting to understand shell init files
 6-create_local_variable creates a new local variable with the name BEST and value School.
 7-create_global_variable creates a new global varibale with the name BEST and value School
 8-true_knowledge prints the result of adding 128 to a value stored in env variable TRUEKNOWLEDGE followed by a new line
+9-divide_and_rule prints the result of POWER divided by DIVIDE, followed by a new line.
