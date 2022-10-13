@@ -4,11 +4,11 @@
 # displays minutes from 1 to 59
 
 hour=0
-while (( $hour <= 12 ))
+while (( hour <= 12 ))
 do
 	echo "Hour: $hour"
 	minute=1
-	while (( $minute <= 59 ))
+	while (( minute <= 59 ))
 	do
 		echo $minute
 		(( minute++ ))
