@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script is displaying numbers from 1 to 20
+# for 4th iteration, displays "bad luck from China" after
+# for the 9th iteration, displays "bad luck from Japan" after
+# for 17th iteration, displays "bad luck from Italy" after
+i=1
+while (( i<21 ))
+do
+	echo $i
+	case $i in
+		4)
+			echo "bad luck from China"
+			;;
+		9)
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "bad luck from Italy"
+			;;
+	esac
+	(( i++ ))
+done
