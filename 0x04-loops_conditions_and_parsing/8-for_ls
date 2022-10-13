@@ -2,7 +2,7 @@
 # displays the content of the current directory
 # in a list format where only the part of the name
 # after the first dash is displayed
-for n in $( ls | cut -d "-" -f2 );
+for n in $( ls );
 do
-	echo "$n"
+	echo "$n" | cut -d '-' -f2
 done
