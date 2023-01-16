@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Returns information about employee TODO list progress
-"""
+"""Returns information about employee TODO list progress"""
 
 import requests
 from sys import argv
@@ -20,9 +19,9 @@ if __name__ == '__main__':
     for todo in todos:
         if todo["completed"]:
             completed += 1
-            completed_tasks.append(todo["title"])
+            completed_tasks.append(todo.get("title"))
 
-    output = f'Employee {user["name"]} is done with\
+    output = f'Employee {user.get("name")} is done with\
  tasks ({completed}/{total_tasks}):'
     print(output)
     [print(f'\t {task}') for task in completed_tasks]
