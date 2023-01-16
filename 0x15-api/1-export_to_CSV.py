@@ -15,8 +15,10 @@ if __name__ == '__main__':
         "{}/todos".format(BASE_URL), params={"userId": argv[1]}).json()
 
     with open("{}.csv".format(argv[1]), 'w', encoding='utf8') as f:
-        writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+        writer = csv.writer(f, delimiter=',',
+                            quotechar='"', quoting=csv.QUOTE_ALL)
         for todo in todos:
-            writer.writerow(["{}".format(argv[1]), "{}".format(user.get("username")),
+            writer.writerow(["{}".format(argv[1]),
+                             "{}".format(user.get("username")),
                              "{}".format(str(todo.get("completed"))),
                              "{}".format(todo.get("title"))])
