@@ -5,11 +5,9 @@ return information about his/her TODO list progress"""
 import requests
 from sys import argv
 
-BASE_URL = 'https://jsonplaceholder.typicode.com'
-
-
 if __name__ == '__main__':
 
+    BASE_URL = 'https://jsonplaceholder.typicode.com'
     user = requests.get(f'{BASE_URL}/users/{argv[1]}').json()
     todos = requests.get(
         f'{BASE_URL}/todos',
@@ -24,8 +22,7 @@ if __name__ == '__main__':
             completed += 1
             completed_tasks.append(todo["title"])
 
-    output = f'Employee {user["name"]} is done with \
-               tasks ({completed}/{total_tasks}):'
+    output = f'Employee {user["name"]} is done with\
+ tasks ({completed}/{total_tasks}):'
     print(output)
-    for task in completed_tasks:
-        print(f'\t {task}')
+    [print(f'\t {task}') for task in completed_tasks]
