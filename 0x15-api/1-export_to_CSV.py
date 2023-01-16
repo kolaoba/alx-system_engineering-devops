@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Script uses REST API for a given employee to
-return information about his/her TODO list progress
+"""Exports information about Employee TODO list progress
 and exports data to csv
 """
 
@@ -12,7 +11,8 @@ import csv
 BASE_URL = 'https://jsonplaceholder.typicode.com'
 
 user = requests.get('{}/users/{}'.format(BASE_URL, argv[1])).json()
-todos = requests.get('{}/todos'.format(BASE_URL), params={"userId": argv[1]}).json()
+todos = requests.get('{}/todos'.format(BASE_URL),
+                     params={"userId": argv[1]}).json()
 
 with open('{}.csv'.format(argv[1]), 'w', encoding='utf8') as f:
     writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
