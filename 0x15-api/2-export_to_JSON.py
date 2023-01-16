@@ -24,5 +24,4 @@ if __name__ == '__main__':
                           "completed": '{}'.format(str(todo.get("completed"))),
                           "username": '{}'.format(user.get("username"))})
         data = {"{}".format(argv[1]): tasks}
-        json_string = json.dumps(data)
-        f.write(json_string.rstrip())
+        json.dump(data, f)
