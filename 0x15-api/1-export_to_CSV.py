@@ -3,9 +3,9 @@
 and exports data to csv
 """
 
+import csv
 import requests
 from sys import argv
-import csv
 
 
 BASE_URL = 'https://jsonplaceholder.typicode.com'
