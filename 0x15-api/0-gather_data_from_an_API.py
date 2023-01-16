@@ -25,7 +25,7 @@ if __name__ == '__main__':
             completed_tasks.append(todo["title"])
 
     output = f'Employee {user["name"]} is done with \
-	           tasks ({completed}/{total_tasks}):'
+               tasks ({completed}/{total_tasks}):'
     print(output)
     for task in completed_tasks:
         print(f'\t {task}')
