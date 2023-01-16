@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Script uses REST API for a given employee to
-return information about his/her TODO list progress
+"""Returns information about employee TODO list progress
 """
 
 import requests
