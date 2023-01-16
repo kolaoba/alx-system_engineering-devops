@@ -20,8 +20,8 @@ if __name__ == '__main__':
     with open('{}.json'.format(argv[1]), 'w', encoding='utf8') as f:
         tasks = []
         for todo in todos:
-            tasks.append({"task": '{}'.format(todo.get("title")),
-                          "completed": '{}'.format(str(todo.get("completed"))),
-                          "username": '{}'.format(user.get("username"))})
-        data = {"{}".format(argv[1]): tasks}
+            tasks.append({"task": todo.get("title"),
+                          "completed": todo.get("completed"),
+                          "username": user.get("username")})
+        data = {argv[1]: tasks}
         json.dump(data, f)
