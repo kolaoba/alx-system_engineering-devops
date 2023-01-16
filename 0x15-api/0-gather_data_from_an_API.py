@@ -7,9 +7,9 @@ from sys import argv
 if __name__ == '__main__':
 
     BASE_URL = 'https://jsonplaceholder.typicode.com'
-    user = requests.get(f'{BASE_URL}/users/{argv[1]}').json()
+    user = requests.get('{}/users/{}'.format(BASE_URL, argv[1])).json()
     todos = requests.get(
-        f'{BASE_URL}/todos',
+        '{}/todos'.format(BASE_URL),
         params={
             "userId": argv[1]}).json()
 
@@ -21,7 +21,8 @@ if __name__ == '__main__':
             completed += 1
             completed_tasks.append(todo.get("title"))
 
-    output = f'Employee {user.get("name")} is done with\
- tasks ({completed}/{total_tasks}):'
+    output = 'Employee {} is done with tasks ({}/{}):'.format(user.get("name"),
+                                                              completed,
+                                                              total_tasks)
     print(output)
-    [print(f'\t {task}') for task in completed_tasks]
+    [print('\t {}'.format(task)) for task in completed_tasks]
