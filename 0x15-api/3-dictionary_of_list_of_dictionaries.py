@@ -4,7 +4,6 @@
 
 import json
 import requests
-from sys import argv
 
 if __name__ == '__main__':
     BASE_URL = 'https://jsonplaceholder.typicode.com'
@@ -17,7 +16,8 @@ if __name__ == '__main__':
         output = {}
         for user in users:
             tasks = []
-            for todo in todos:
+            for todo in requests.get('{}/todos'.format(BASE_URL),
+                                     params={"userId": user.get("id")}).json():
                 tasks.append({"username": user.get("username"),
                               "task": todo.get("title"),
                               "completed": todo.get("completed")})
