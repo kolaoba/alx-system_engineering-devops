@@ -1,6 +1,5 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """Returns first 10 hot posts for a given subreddit"""
-
 import requests
 
 
