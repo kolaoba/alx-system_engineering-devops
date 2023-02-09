@@ -9,7 +9,7 @@ exec { 'replace_line':
   path    => ['/bin','/usr/bin']
 } ->
 
-exec { "restart_ngninx":
-  command => "nginx restart",
-  path => "/etc/init.d/"
+exec { 'restart_ngninx':
+  command => 'nginx restart',
+  path    => '/etc/init.d/'
 }
