@@ -2,9 +2,14 @@
 
 $file_to_edit = '/etc/default/nginx'
 
-#replace line containing "phpp" with "php"
+# replace ULIMIT line with original default
 
 exec { 'replace_line':
-  command => "sed -i 's/^ULIMIT=.*/ULIMIT=\"-n 15000\"/g' ${file_to_edit}",
+  command => "sed -i 's/^ULIMIT=.*/ULIMIT=\"-n 4096\"/g' ${file_to_edit}",
   path    => ['/bin','/usr/bin']
+} ->
+
+exec { "restart_ngninx":
+  command => "nginx restart",
+  path => "/etc/init.d/"
 }
